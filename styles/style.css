@@ -1,15 +1,14 @@
 html {
-    background-color: #efebdd;
+    background-color: #6894d3;
     font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
     font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
 }
 
 body {
-    width: 1000px;
     margin: 0 auto;
-    background-color: #f8c471;
+    background-image: linear-gradient(to bottom right, rgb(250, 250, 250), rgb(184, 231, 250));
     padding: 0 20px 20px 20px;
-    border: 5px solid black;
+    border: 5px #ffffff;
 }
 
 h1 {
@@ -21,14 +20,55 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin: 0;
+    padding: 20px 0;
+    color: #000000;
+    /*text-shadow: 3px 3px 1px black;*/
+    font-size: 30px;
+    text-align: center;
+}
+
 p, li {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
   }
 
-img {
-    display: block;
-    margin: 0 auto;
-    width: 600;
-}
+  img {
+    border-radius: 10%;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh;
+      background-color: #6894d3;
+  }
+
+  .logo {
+      color:#e9e9e9;
+      letter-spacing: 5px;
+      font-size: 20px;
+  }
+
+  .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+  }
+
+  .nav-links li{
+      list-style: none;
+  }
+  .nav-links a {
+    color:#e9e9e9;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+  
