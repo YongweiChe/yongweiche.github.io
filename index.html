@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Yongwei Che's Portfolio Website</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <nav>
@@ -12,146 +13,47 @@
             <h4>yongweic</h4>
         </div>
         <ul class = "nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Yongwei-Che-Resume.pdf">Resume</a></li>
+            <li><a href="form.html">Contact Me</a></li>
         </ul>
     </nav>
+
     <style>
-
-
-
-
-
-
-
-
-
-
-
-        .wrapper{
-            display:grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            grid-column-gap: 4em;
-            grid-row-gap: 1em;
-            grid-auto-rows: minmax(100px, auto);
-            justify-items:stretch;
-            align-items:stretch;
-        }
-        /*
-        .wrapper > div{
-            background:#ffffff;
-
-            padding:1em;
-        }
-        */
-
-        .image {
-            grid-column:1/2;
-            grid-row:2/3;
-        }
-        
-        .description {
-            grid-column:2/3;
-            grid-row:2/3;
-        }
-        
-        .contact {
-            grid-row:3;
-
-            display:grid;
-            grid-template-columns:repeat(3, 1fr);
-        }
-
-        .skills-title > div{
-            background-image: linear-gradient(to bottom right, #6894d3, #5d8dd1);
-        }
-        .skills-title {
-            
-            grid-column:1/4;
-            grid-row:4;
-        }
-
-        .skills {
-            grid-column:1/4;
-            grid-row:5/7;
-
-            display:grid;
-            grid-template-columns:repeat(3, 1fr);
-        }
-
-        .wrapper2 > div{
-            color:#e2e0e0;
-            background-image: url("images/background.png");
-            border-radius:5%;
-            padding:1em;
-        }
-        .wrapper2 {
-            grid-column:3;
-            grid-row:2/5;
-        }
-
-        .projects-title > div{
-            background-image: linear-gradient(to bottom right, #5d8dd1, #568bd4);
-        }
-        .projects-title {
-            
-            grid-column:1/4;
-            grid-row:7;
-        }
-
-        .projects {
-            grid-column:1/4;
-            grid-row:8;
-        }
-        
-        .coursework-title > div{
-            background-image: linear-gradient(to bottom right, #568bd4, #4880ce);
-        }
-        .coursework-title {
-            grid-column:1/4;
-            grid-row:9;
-        }
-
-        .awards-title > div{
-            background-image: linear-gradient(to bottom right, #4880ce, #3f7acc);
-        }
-        .awards-title {
-            grid-column:1/4;
-            grid-row:10;
-        }
-        .contact-title > div{
-            background-image: linear-gradient(to bottom right, #3f7acc, #3774ca);
-        }
-        .contact-title {
-            grid-column:1/4;
-            grid-row:10;
-        }
-
-        .center {
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .wrapper2 > div{
+        color:#e2e0e0;
+        background-image: url("images/background.png");
+        border-radius:15px;
+        padding:1em;
+    }
+    .wrapper2 {
+        grid-column:3;
+        grid-row:2/5;
+    }
     </style>
 
-
-    <body>
+    
+    
         <div class="wrapper">
             <div class="box image">
-                <img src="images/profile1.jpg" alt="Shiba" height='400'>
+                <img src="images/profile1.jpg" alt="Photo of Yongwei" height='400'>
             </div>
             
             <div class="box contact">
-                <div><a href="github.com/YongweiChe">Github</a></div>
-                <div><a href="yongweic@princeton.edu">E-mail</a></div>
+                <div class="footer-social-icons">
+                    <ul class="social-icons">
+                        <li><a href="https://www.linkedin.com/in/yongwei-che-66525b19b/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/YongweiChe" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="box description">
                 <div>
                     <h2 style="text-align:left">Hi, my name is </h2>
                     <h1 style="text-align:left">Yongwei Che</h1>
-                    <h2 style="text-align:left">I am a Computer Science Student at <u>Princeton University</u> looking for sofware engineering internship opportunities for Summer 2021</h2>
+                    <h2 style="text-align:left">I am a Computer Science Student at <u>Princeton University</u> looking for software engineering internship opportunities in Summer 2021.</h2>
                 </div>
             </div>
             
@@ -161,15 +63,14 @@
             </div>
             
             <div class="box skills">
-                <div class="languages">JAVA</div>
-                <div class="languages">Python</div>
-                <div class="languages">C++</div>
-                <div class="languages">HTML</div>
-                <div class="languages">CSS</div>
-                <div class="languages">JavaScript</div>
-                <div class="languages">R</div>
-                <div class="languages">MATLAB</div>
-                <div class="languages">LaTeX</div>
+                <div class="languages"><img src="images/java.png" alt="JAVA" width='100'></div>
+                <div class="languages"><img src="images/python.png" alt="Python" width='100'></div>
+                <div class="languages"><img src="images/c++.png" alt="c++" width='100'></div>
+                <div class="languages"><img src="images/html.png" alt="html" width='100'></div>
+                <div class="languages"><img src="images/css.png" alt="css" width='100'></div>
+                <div class="languages"><img src="images/javascript.png" alt="JS" width='100'></div>
+                <div class="languages"><img src="images/R.png" alt="R" width='100'></div>
+                <div class="languages"><img src="images/matlab.png" alt="matlab" width='100'></div>
             </div>
             <div class="wrapper2">
             <div class="degree">
@@ -179,8 +80,8 @@
                 <i>Aug 2020 - Jun 2024, Princeton, NJ</i><br>
                 B.S.E in Computer Science<br>
                 <ul>
-                    <li>Certificate in Applied and Computational Math</li>
-                    <li>Certificate in Statistics and Machine Learning</li>
+                    <li>- Certificate in Applied and Computational Math</li>
+                    <li>- Certificate in Statistics and Machine Learning</li>
                 </ul>
 
                 </p>
@@ -189,128 +90,46 @@
             
 
             <div class="box projects-title">
-                <div><h2 style="text-align:center;color:#e9e9e9">Projects</h2></div>
+                <div><h2 style="text-align:center;color:#e9e9e9">Featured Projects</h2></div>
             </div>
-
-            <div class="box projects">
-                <h2><a href="https://github.com/beloiual/counterpoint-checker">Counterpoint Checker</a></h2>
-                <img src="images/consecutive-fifths.png" alt="Consecutive FIfths" width="200">
-                <h2><a href="https://github.com/YongweiChe/motion_sensor">Motion Sensor</a></h2>
-                <img src="images/raspberry-pi.webp" alt = "Raspberry Pi" width="200">
+            <div class="posts">
+            <div class="blog-post">
+                <div class="blog-post__img">
+                    <img src="images/consecutive-fifths.png" alt="counterpoint">
+                </div>
+                <div class="blog-post__info">
+                    <div class="blog-post__date">
+                        <span>December 2020 - Present</span>
+                    </div>
+                    <h1 class="blog-post__title">Counterpoint Checker</h1>
+                    <p class="blog-post__text">This is a counterpoint autograder developed by myself and four University of Michigan students.  I implemented multiple algorithms to check student submissions against counterpoint rules. We are currently in discussion with University of Michigan SMTD faculty for use in Music Theory classes</p>
+                    <a href="https://github.com/beloiual/counterpoint-checker" class="blog-post__cta">Read more</a>
+                </div>
             </div>
-            
+            </div>
             <div class="box coursework-title">
                 <div><h2 style="text-align:center;color:#e9e9e9">Coursework</h2></div>
             </div>
+            <div class="box coursework">
+                <div class="courses"><p style="text-align:center">MAT201 | Multivariable Calculus</p></div>
+                <div class="courses"><p style="text-align:center">MAT202 | Linear Algebra</p></div>
+                <div class="courses"><p style="text-align:center">ORF245 | Statistics and Probability</p></div>
+                <div class="courses"><p style="text-align:center">COS226 | Algorithms</p></div>
+                <div class="courses"><p style="text-align:center">LIN201 | Intro Linguistics</p></div>
+                <div class="courses"><p style="text-align:center">ECO100 | Intro Microeconomics</p></div>
+                <div class="courses"><p style="text-align:center">MUS105 | Music Theory</p></div>
+                <div class="courses"><p style="text-align:center">WRI117 | Sustainable Futures</p></div>
+            </div>
+            <div class="box awards-title">
+                <div><h2 style="text-align:center;color:#e9e9e9">Awards</h2></div>
+            </div>
+            <div class="box awards">
+                <div class="courses"><p style="text-align:center">USA Physics Olympiad Semi-Finalist</p></div>
+                <div class="courses"><p style="text-align:center">National AP Scholar</p></div>
+            </div>
         </div>
-    </body>
-    <p>
-    <table class="center">
-        <caption>Undergraduate Coursework at Princeton University. (More info on <a href="https://registrar.princeton.edu/course-offerings">Princeton's Registrar</a>).</caption>
-        <colgroup>
-          <col span="2">
-          <col style="border: 2px solid black">
-          <col span="9">
-        </colgroup>
-        <thead>
-          <tr>
-            <th>Fall2020</th>
-            <th>Spring2021</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>MAT201 | Multivariable Calculus</td>
-            <td>MAT202 | Linear Algebra</td>
-          </tr>
-          <tr>
-            <td>COS126 | Computer Science: An Interdisciplanary Approach</td>
-            <td>COS226 | Algorithms</td>
-          </tr>
-          <tr>
-            <td>ECO100 | Introduction to Microeconomics</td>
-            <td>ORF245 | Fundamentals of Statistics</td>
-          </tr>
-          <tr>
-            <td>LIN201 | Introduction to Linguistics</td>
-            <td>WRI117 | Sustainable Futures</td>
-          </tr>
-          <tr>
-            <td>MUS105 | Music Theory through Performance and Composition</td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <br>
-      <br>
-      <table class="center">
-        <caption>AP Scores</caption>
-        <colgroup>
-            <col span="2">
-            <col style="border: 2px solid black">
-            <col span="9">
-        </colgroup>
-        <thead>
-            <th>Class</th> 
-            <th>Score</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Calculus AB</td>
-                <td>5/5</td>
-            </tr>
-            <tr>
-                <td>Calculus BC</td>
-                <td>5/5</td>
-            </tr>
-            <tr>
-                <td>Physics C Mechanics</td>
-                <td>5/5</td>
-            </tr>
-            <tr>
-                <td>Physic C E&M</td>
-                <td>5/5</td>
-            </tr>
-            <tr>
-                <td>Chemistry</td>
-                <td>5/5</td>
-            </tr>
-            <tr>
-                <td>Biology</td>
-                <td>5/5</td>
-            </tr>
-            <tr>
-                <td>World History</td>
-                <td>5/5</td>
-            </tr>
-            <tr>
-                <td>Language & Composition</td>
-                <td>5/5</td>
-            </tr>
-            <tr>
-                <td>Chinese Language & Culture</td>
-                <td>5/5</td>
-            </tr>
-        </tbody>
-      </table>
-
-    </p>
-    <div class="awards-title">
-        <div><h2 style="text-align:center;color:#e9e9e9">Awards</h2></div>
-    </div>
-    <h2>
-        <ul>
-            <li>USA Physics Olympiad Semi-Finalist</li>
-            <li>National AP Scholar</li>
-        </ul>
-    </h2>
-    <h2>
-    <div class="contact-title">
-        <div><h2 style="text-align:center;color:#e9e9e9">Contact Me</h2></div>
-    </div>
-    <p>yongweic@princeton.edu</p>
-    </h2>
-    <script src="scripts/main.js"></script>
+        
+        <script src="scripts/main.js"></script>
 </body>
 </html>
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+            <h4>yongweic</h4>
+        </div>
+        <ul class = "nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Yongwei-Che-Resume.pdf">Resume</a></li>
+            <li><a href="form.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <style>
+    .wrapper2 > div{
+        color:#e2e0e0;
+        background-image: url("images/background.png");
+        border-radius:15px;
+        padding:1em;
+    }
+    .wrapper2 {
+        grid-column:3;
+        grid-row:2/5;
+    }
+
+
+
+    </style>
+        <div class="wrapper">
+            <div class="box projects-page-title">
+                <div><h2 style="text-align:center;color:#6894d3">Projects/Visualization Gallary</h2></div>
+            </div>
+            <div class="projects-page-posts">
+            <div><br><br></div>
+            <div class="blog-post">
+                <div class="blog-post__img">
+                    <img src="images/consecutive-fifths.png" alt="counterpoint">
+                </div>
+                <div class="blog-post__info">
+                    <div class="blog-post__date">
+                        <span>December 2020 - Present</span>
+                    </div>
+                    <h1 class="blog-post__title">Counterpoint Checker</h1>
+                    <p class="blog-post__text">This is a counterpoint autograder developed by myself and four University of Michigan students.  I implemented multiple algorithms to check student submissions against counterpoint rules. We are currently in discussion with University of Michigan SMTD faculty for use in Music Theory classes</p>
+                    <a href="https://github.com/beloiual/counterpoint-checker" class="blog-post__cta">Read more</a>
+                </div>
+            </div>
+            <div><br><br><br></div>
+            <div class="blog-post">
+                <div class="blog-post__img">
+                    <img src="images/pir.jpg" alt="counterpoint">
+                </div>
+                <div class="blog-post__info">
+                    <div class="blog-post__date">
+                        <span>March 2020 - July 2020</span>
+                    </div>
+                    <h1 class="blog-post__title">Raspberry Pi Motion Sensor</h1>
+                    <p class="blog-post__text">Used Python and the YOLOv3 object detection algorithm to write a script that detected and classified motion from four PIR sensors and two cameras. Information was then sent through a RabbitMQ to send emails and update a dedicated website</p>
+                    <a href="https://github.com/YongweiChe/motion_sensor" class="blog-post__cta">Read more</a>
+                </div>
+            </div>
+            </div>
+        <script src="scripts/main.js"></script>
+</body>
+</html>
