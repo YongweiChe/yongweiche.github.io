@@ -1,7 +1,7 @@
 html {
     background-color: #6894d3;
     font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
-    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+    font-family: 'Roboto', sans-serif;/* this should be the rest of the output you got from Google fonts */
 }
 
 body {
@@ -194,8 +194,6 @@ p, li {
          background: #769dd3;
         }
 
-
-@import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 a {
@@ -381,7 +379,7 @@ ul.social-icons {
     grid-column:1/4;
     grid-row:14;
     display:grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:1fr 1fr;
     grid-column-gap: 2em;
     grid-row-gap: 2em;
 }
